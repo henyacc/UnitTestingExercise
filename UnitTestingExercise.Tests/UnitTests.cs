@@ -30,6 +30,9 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(40, 23, 17)] //Add test data <-------
+        [InlineData(23, 17,  6)]
+        [InlineData(63, 17,  46)]
+        [InlineData(73, 17,  56)]
         public void SubtractTest(int minuend, int subtrhend, int expected)
         {
             //Start Step 5 here:
@@ -47,6 +50,8 @@ namespace UnitTestingExercise.Tests
         [Theory]
         [InlineData(25, 25, 625)]//Add test data <-------
         [InlineData(50, 50, 2500)]
+        [InlineData(15, 25, 375)]
+        [InlineData(25, 5, 125)]
         public void MultiplyTest(int num1, int num2, int expected)
         {
             //Start Step 7 here:
@@ -63,6 +68,10 @@ namespace UnitTestingExercise.Tests
 
         [Theory]
         [InlineData(25, 25, 1)]//Add test data <-------
+        [InlineData(50, 25, 2)]
+        [InlineData(15, 5, 3)]
+        [InlineData(25, 5, 5)]
+        
         public void DivideTest(int num1, int num2, int expected)
         {
             //Arrange
